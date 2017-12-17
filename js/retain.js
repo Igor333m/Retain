@@ -32,7 +32,7 @@ $(function(){
 
         getNotes: function() {
             console.log(model.getAllNotes());
-            return model.getAllNotes();
+            return model.getAllNotes().reverse();
         },
 
         init: function() {
