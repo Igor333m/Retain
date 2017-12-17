@@ -2,25 +2,35 @@
 *:before,
 *:after {box-sizing: border-box;}
 
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
 .new-note-form {
     margin-bottom: 15px;
 }
 .new-note-content {
     width:100%;
     display: block;
-    font-size: 1.3em;
+    font-size: 1.5rem;
 }
 
 .notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
     list-style-type: none;
     margin:0;
     padding: 0;
 }
 .note {
     display: inline-block;
-    width: 250px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    /*width: 250px;*/
+    /*margin-right: 20px;
+    margin-bottom: 20px;*/
     padding:10px;
     list-style-type: none;
     background-color: #bcd;
