@@ -62,9 +62,8 @@ input::placeholder {
     font-size: 0.8em;
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .notes {
-        border: red solid 2px;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
 }
