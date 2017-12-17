@@ -25,27 +25,31 @@ h1 {
 
 .notes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
     list-style-type: none;
-    margin:0;
+    margin: 2em;
     padding: 0;
 }
 .note {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
     border-radius: 5px;
     padding:10px;
     list-style-type: none;
     background: linear-gradient(135deg, #1b3e59 0%,#2989d8 31%,#207cca 62%,#1b3e59 100%);
-    font-size: 1.4em;
+    font-size: 2em;
     color: #ffac00;
+    text-align: center;
 }
 
 .note-date {
     color: white;
     font-size:0.7rem;
-    margin-bottom: 10px;
-    display: block;
+    margin: 10px 0;
+    text-align: left;
+    /*display: block;*/
 }
 
 input {
