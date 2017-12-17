@@ -23,11 +23,22 @@
     margin-bottom: 20px;
     padding:10px;
     list-style-type: none;
-    background-color: #cde;
+    background-color: #bcd;
+    font-size: 1.1em;
 }
 
 .note-date {
-    font-size:0.7em;
+    font-size:0.7rem;
     margin-bottom: 10px;
     display: block;
+}
+
+input {
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+    color: #cde;
+}
+
+input::placeholder {
+    color: #cde;
+    font-size: 0.8em;
 }
