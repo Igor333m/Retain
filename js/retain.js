@@ -1,6 +1,6 @@
 $(function(){
 
-    var model = {
+    let model = {
 
         // Checks for localStorage and add one if none
         init: function() {
@@ -10,7 +10,7 @@ $(function(){
         },
         add: function(obj) {
             // Parses localStorage JSON string to JS object
-            var data = JSON.parse(localStorage.notes);
+            let data = JSON.parse(localStorage.notes);
             // Adds new note to the object
             data.push(obj);
             // Converts JS object to JSON string and stores it to localStorage
@@ -22,11 +22,11 @@ $(function(){
         }
     };
 
-    var octopus = {
+    let octopus = {
         addNewNote: function(noteStr) {
             model.add({
                 content: noteStr,
-                date: new Date()
+                dateSubmitted: Date.now()
             });
             view.render();
         },
@@ -42,11 +42,11 @@ $(function(){
         }
     };
 
-    var view = {
+    let view = {
         init: function() {
             this.noteList = $('#notes');
-            var newNoteForm = $('#new-note-form');
-            var newNoteContent = $('#new-note-content');
+            let newNoteForm = $('#new-note-form');
+            let newNoteContent = $('#new-note-content');
             newNoteForm.submit(function(e){
                 octopus.addNewNote(newNoteContent.val());
                 newNoteContent.val('');
@@ -55,10 +55,10 @@ $(function(){
             view.render();
         },
         render: function(){
-            var htmlStr = '';
+            let htmlStr = '';
             octopus.getNotes().forEach(function(note){
                 htmlStr += `<li class="note">${note.content}<span class="note-date">
-                            ${note.date}<span>
+                            ${new Date(note.dateSubmitted).toString()}<span>
                     </li>`;
             });
             this.noteList.html( htmlStr );
