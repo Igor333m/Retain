@@ -2,12 +2,17 @@
 *:before,
 *:after {box-sizing: border-box;}
 
+body {
+    color: #f2f0f0
+}
 header {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-
+h1 {
+    color: #1b3e59;
+}
 
 .new-note-form {
     margin-bottom: 15px;
@@ -28,16 +33,16 @@ header {
 }
 .note {
     display: inline-block;
-    /*width: 250px;*/
-    /*margin-right: 20px;
-    margin-bottom: 20px;*/
+    border-radius: 5px;
     padding:10px;
     list-style-type: none;
-    background-color: #bcd;
-    font-size: 1.1em;
+    background: linear-gradient(135deg, #1b3e59 0%,#2989d8 31%,#207cca 62%,#1b3e59 100%);
+    font-size: 1.4em;
+    color: #ffac00;
 }
 
 .note-date {
+    color: white;
     font-size:0.7rem;
     margin-bottom: 10px;
     display: block;
@@ -45,7 +50,7 @@ header {
 
 input {
     box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
-    color: #cde;
+    color: #1b3e59;
 }
 
 input::placeholder {
