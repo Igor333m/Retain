@@ -5,3 +5,5 @@ This is an example from Udacity's [Javascript Design Patterns course](https://ww
 # Open the page
 
 Open this example [here](https://igor333m.github.io/Retain)
+
+## Clone the repo and open up index.html in your browser of choice.
