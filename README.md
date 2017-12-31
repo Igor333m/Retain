@@ -11,4 +11,4 @@ Open this example [here](https://igor333m.github.io/Retain)
 
 ## App preview
 
-![App preview](ratain.png)
+![App preview](retain.png)
